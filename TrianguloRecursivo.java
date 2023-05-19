@@ -7,15 +7,20 @@ public class TrianguloRecursivo{
 
 	public static void trianguloRecursivo(int base){
 
-		for(int i=0;i<=base;i++){
-			for (int j = 0; j <= base; j++) {
-				System.out.print("*");
-			}
+		int a = 1;
+		int b = base - 1;
 
-			for (int j = base; j <= 0; j--) {
+		for(int i=1;i<=base;i++){
+			for (int j = 1; j < a; j++) {
 				System.out.print(" ");
 			}
+			
+			for (int j = 1; j < b; j++) {
+				System.out.print("*");
+			}
 			System.out.println();
+			a++;
+			b--;
 		}
 	}
 }
