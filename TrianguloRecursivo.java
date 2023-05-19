@@ -3,6 +3,9 @@ public class TrianguloRecursivo{
 	public static void main(String[] args){
 	
 		trianguloRecursivo(5);
+		trianguloRecursivo(6);
+		trianguloRecursivo(10);
+		trianguloRecursivo(3);
 	}
 
 	public static void trianguloRecursivo(int base){
