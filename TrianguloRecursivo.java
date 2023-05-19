@@ -10,14 +10,16 @@ public class TrianguloRecursivo{
 		int a = 1;
 		int b = base - 1;
 
-		for(int i=1;i<=base;i++){
-			for (int j = 1; j < a; j++) {
-				System.out.print(" ");
-			}
+		for(int i=0;i<=base;i++){
 			
-			for (int j = 1; j < b; j++) {
+			for (int j = 1; j < a; j++) {
 				System.out.print("*");
 			}
+
+			for (int j = 1; j < b; j++) {
+				System.out.print(" ");
+			}
+	
 			System.out.println();
 			a++;
 			b--;
